@@ -13,6 +13,7 @@
            #:collect
            #:while
            #:until
+           #:defcurryfun
            #:->
            #:->>
            #:as->))
