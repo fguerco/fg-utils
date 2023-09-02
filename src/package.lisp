@@ -1,4 +1,5 @@
 (defpackage :fg-utils
+  (:nicknames :fg)
   (:use :cl :alexandria)
   (:export #:filter
            #:select
@@ -9,6 +10,7 @@
            #:join-to-string
            #:join-to-symbol
            #:with-list-collection
+           #:collect
            #:while
            #:until
            #:->
