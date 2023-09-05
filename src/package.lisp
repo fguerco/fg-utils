@@ -18,6 +18,7 @@
            #:mapalistn
            #:mapplist
            #:mapplistn
+           #:defcurryfun
            #:->
            #:->>
            #:as->))
