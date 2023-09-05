@@ -9,6 +9,7 @@
                 :components ((:file "package")
                              (:file "aliases")
                              (:file "arrows")
+                             (:file "alist-plist")
                              (:file "sequences")
                              (:file "utilities"))))
 

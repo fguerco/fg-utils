@@ -13,6 +13,11 @@
            #:collect
            #:while
            #:until
+           #:doalist
+           #:mapalist
+           #:mapalistn
+           #:mapplist
+           #:mapplistn
            #:->
            #:->>
            #:as->))
