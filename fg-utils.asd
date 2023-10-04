@@ -11,7 +11,8 @@
                              (:file "arrows")
                              (:file "alist-plist")
                              (:file "sequences")
-                             (:file "utilities"))))
+                             (:file "utilities")
+                             (:file "anaphoric"))))
 
   :in-order-to ((test-op (test-op :fg-utils/test))))
 
