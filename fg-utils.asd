@@ -8,6 +8,7 @@
                 :serial t
                 :components ((:file "package")
                              (:file "aliases")
+                             (:file "basics")
                              (:file "arrows")
                              (:file "alist-plist")
                              (:file "sequences")
