@@ -8,7 +8,6 @@
            #:filter
            #:select
            #:reject
-           #:fn
            #:force-list
            #:seq
            #:doseq
