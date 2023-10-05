@@ -18,6 +18,9 @@
   `(loop for (,k ,v) on ,plist by #'cddr
          ,op ,@forms))
 
+(defmacro doplist ((k v plist) &body forms)
+  `(%loop-plist (,k ,v ,plist) do ,@forms))
+
 (defun mapplist (fn plist)
   (%loop-plist (k v plist) collect (funcall fn k v)))
 
