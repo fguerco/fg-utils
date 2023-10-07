@@ -16,16 +16,17 @@
 
 (define-test force-list
   (macrolet ((test (in expected)
-               `(let ((subject ,in))
-                  (force-list subject)
-                  (is equal ,expected subject))))
+               `(is equal ,expected
+                    (let ((subject ,in))
+                      (force-list subject)
+                      subject))))
 
     (test 1 '(1))
     (test '(1) '(1))
     (test nil nil)))
 
 (define-test nlet
-  (let ((x (nlet fn ((n 3))
-             (if (= n 1) 1
-                 (+ n (fn (1- n)))))))
-    (is = 6 x)))
+  (is = 120
+      (nlet fac ((n 5))
+        (if (= n 1) 1
+            (* n (fac (1- n)))))))
