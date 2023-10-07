@@ -20,6 +20,10 @@
 (defsystem :fg-utils/test
   :depends-on (:fg-utils :parachute)
   :components ((:module "test"
-                :serial t))
+                :components ((:file "package")
+                             (:file "basics")
+                             (:file "arrows")
+                             (:file "sequences")
+                             (:file "alist-plist"))))
   :perform (test-op (op c)
-                    (symbol-call :parachute :test :utilities-test)))
+                    (symbol-call :parachute :test :fg/test)))
